@@ -6,7 +6,15 @@
     <title>Art Experientials</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
+<script>
+    function togglePortfolio() {
+    if (portfolio) {
+        document.getElementById('portfolio').style.height = "200px";
+    }else {
+        document.getElementById('portfolio').style.height = "0";
+    }
+}
+</script>
 <body>
     <div class='header'>
         <img id="headshot" src="/art-experientials/IMG-1617.jpg">

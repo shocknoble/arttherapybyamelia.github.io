@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Amelia</title>
     <link rel="stylesheet" href="index.css">
+    
 </head>
-
+<script>
+    function togglePortfolio() {
+    if (portfolio) {
+        document.getElementById('portfolio').style.height = "200px";
+    }else {
+        document.getElementById('portfolio').style.height = "0";
+    }
+}
+</script>
 <body>
     <div class='header'>
         <img id="headshot" src="/art-experientials/IMG-1617.jpg">
-        <p><a href="/home.html">home</a> portfolio <a href="/about.html">about</a> <a href="/contact.html">contact</a></p>
+        <p><a href="/index.html">home</a> <p id="portfolio">portfolio</p> <a href="/about.html">about</a> <a href="/contact.html">contact</a></p>
     </div>
     
 </body>
