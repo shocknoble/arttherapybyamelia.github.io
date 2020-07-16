@@ -1,0 +1,43 @@
+html {
+    background-color: #ffc8f3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.header {
+    display: block;
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    font-size: 20pt;
+}
+#headshot {
+    height: 80px;
+    width: 80px;
+    top: auto;
+    left: 5%;
+    position: absolute;
+    border-style: hidden;
+    border-radius: 40px;
+    vertical-align: middle;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+
+} 
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: purple;
+}
+
+hr {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
