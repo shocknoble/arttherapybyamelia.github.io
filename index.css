@@ -15,8 +15,9 @@ html {
 #headshot {
     height: 80px;
     width: 80px;
-    top: auto;
+    top: 1%;
     left: 5%;
+    
     position: absolute;
     border-style: hidden;
     border-radius: 40px;
@@ -64,10 +65,28 @@ hr {
     text-align: left;
     color: purple;
 }
+
+.dropdown:hover {
+    color: purple;
+}
     
   
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
     display: block;
     height: auto;
     transition: height ease-out 0.5s;
+  }
+
+  .dropdown-content a:hover {
+      outline: black groove thin;
+  }
+
+  .myArt {
+      display: table;
+      margin-left: 0;
+      margin-top: 10%;
+  }
+  .myArt img{
+        max-height: 200px;
+        padding: 1%;
   }

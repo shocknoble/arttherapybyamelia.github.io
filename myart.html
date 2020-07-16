@@ -6,21 +6,67 @@
     <title>My Art</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<script>
-    function togglePortfolio() {
-    if (portfolio) {
-        document.getElementById('portfolio').style.height = "200px";
-    }else {
-        document.getElementById('portfolio').style.height = "0";
-    }
-}
-</script>
+
 <body>
     <div class='header'>
-        <img id="headshot" src="/art-experientials/IMG-1617.jpg">
-        <p>home portfolio about contact</p>
+        <img id="headshot" src="/art-experientials/IMG-1617.jpg"/>
+        <a href="/index.html">home</a> 
+        <span class="dropdown" id="portfolio">portfolio 
+            <div class="dropdown-content">
+                        <a href="/myart.html" style="color: purple">My Art</a> <br>
+                        <a href="/artexp.html" style="color: purple" >Art Experientials</a><br>
+                        <a href="/assignments.html" style="color: purple" >Assignments</a>
+
+            </div>
+        </span>
+        <a href="/about.html">about</a> 
+        <a href="/contact.html">contact</a>
+        
     </div>
-    
-</body>
+    <table class="myArt">
+        <tr>
+            <td>
+                <img src="/my-art/IMG-2074.JPG" alt="">
+            </td>
+            <td>
+                <img src="/my-art/IMG-1281.jpg" alt="">
+            </td>
+            <td>
+                <img src="/my-art/IMG-1657.jpg" alt="">
+            </td>
+            <td>
+                <img src="/my-art/IMG-3064.jpg" alt="">
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <img src="/my-art/IMG-3066.jpg" alt="">
+            </td>
+            <td>
+                <img src="/my-art/IMG-3067.jpg" alt="">
+            </td>
+            <td>
+                <img src="/my-art/IMG-3068.jpg" alt="">
+            </td>
+            <td>
+                <img src="/my-art/IMG-3069.jpg" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/my-art/IMG-3552.jpg" alt="">
+            </td>
+            <td>
+                <img src="/my-art/IMG-4458.jpg" alt="">
+            </td>
+            <td>
+                <img src="/my-art/IMG-5062.jpg" alt="">
+            </td>
+        </tr>
+    </table>
+
+
+
 </body>
 </html>
