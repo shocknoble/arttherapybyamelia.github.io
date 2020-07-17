@@ -1,5 +1,6 @@
-html {
-    background: linear-gradient(180deg, #ffc8f3 60%, white);
+html, body {
+    background: linear-gradient( #ffc8f3 60%, white);
+    background-repeat: no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
@@ -86,10 +87,7 @@ hr {
       margin-left: 0;
       margin-right: 0;
       margin-top: 10%;
-      /* padding-left: -20px; */
-      /* padding-right: 0; */
-      /* padding-bottom: -50px; */
-      padding: -20%;
+      
   }
   .myArt img{
         max-height: 200px;

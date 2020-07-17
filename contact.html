@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="index.css">
     
 </head>
-<script>
-    function togglePortfolio() {
-    if (portfolio) {
-        document.getElementById('portfolio').style.height = "200px";
-    }else {
-        document.getElementById('portfolio').style.height = "0";
-    }
-}
-</script>
-<body>
-    <div class='header'>
-        <img id="headshot" src="/art-experientials/IMG-1617.jpg">
-        <p><a href="/index.html">home</a> <p id="portfolio">portfolio</p> <a href="/about.html">about</a> <a href="/contact.html">contact</a></p>
+
+<body style="background:linear-gradient(180deg, #ffc8f3 100%, white); height: 100%">
+    <div class='header' style="height: 100%; background: linear-gradient(180deg, #ffc8f3 100%, white);">
+        <img id="headshot" src="/art-experientials/IMG-1617.jpg"/>
+        <a href="/index.html">home</a> 
+        <span class="dropdown" id="portfolio">portfolio 
+            <div class="dropdown-content">
+                        <a href="/myart.html" style="color: purple">My Art</a> <br>
+                        <a href="/artexp.html" style="color: purple" >Art Experientials</a><br>
+                        <a href="/assignments.html" style="color: purple" >Assignments</a>
+
+            </div>
+        </span>
+        <a href="/about.html">about</a> 
+        <a href="/contact.html">contact</a>
+        
+    </div>
+    <div>
+
     </div>
     
 </body>
