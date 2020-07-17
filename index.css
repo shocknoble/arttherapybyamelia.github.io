@@ -1,5 +1,5 @@
 html {
-    background-color: #ffc8f3;
+    background: linear-gradient(180deg, #ffc8f3 60%, white);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
@@ -74,7 +74,6 @@ hr {
   .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
     display: block;
     height: auto;
-    transition: height ease-out 0.5s;
   }
 
   .dropdown-content a:hover {
@@ -82,9 +81,15 @@ hr {
   }
 
   .myArt {
+      width: 100%;
       display: table;
       margin-left: 0;
+      margin-right: 0;
       margin-top: 10%;
+      /* padding-left: -20px; */
+      /* padding-right: 0; */
+      /* padding-bottom: -50px; */
+      padding: -20%;
   }
   .myArt img{
         max-height: 200px;
