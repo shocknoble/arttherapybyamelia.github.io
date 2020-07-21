@@ -8,6 +8,11 @@ body {
     background: linear-gradient(-180deg, #ffc8f3 70%, white);
 }
 
+body {
+  width: 100%;
+  height: 100%;
+}
+
 .header {
     display: block;
     width: 40%;
@@ -79,7 +84,7 @@ hr {
     height: auto;
   }
 
-  .dropdown-content a:hover {
+  .dropdown-content a:hover, .dropdown-content a:mouseenter {
       outline: black groove thin;
   }
 
@@ -103,3 +108,78 @@ hr {
 
         padding: 1%;
   }
+
+  ul.horizontal-list {
+	min-width: 696px;
+    list-style: none;
+    list-style-type: none;
+	padding-top: 10px;
+	}
+    ul.horizontal-list li {
+        display: inline;
+    }
+
+#resumeThumb, #recThumb {
+    opacity: 1;
+    text-align: center;
+    vertical-align: middle;
+    transition: opacity 0.25s;
+}
+
+#resumeLabel{
+    opacity: 0;
+    color: black;
+    font-size: 3vw;
+    position: absolute;
+    top: 32.5%;
+    left: 37%;
+    translate: (-50%, -50%);
+}
+/* #recLabel {
+    opacity: 0;
+    color: black;
+    font-size: 2vw;
+    position: absolute;
+    top: 30%;
+    left: 53%;
+    translate: (-50%, -50%);
+} */
+
+#resumeThumb:hover, #recThumb:hover{
+    opacity: 0.25;
+    color: white;
+}
+
+#resumeThumbImg {
+    position: relative;
+}
+
+#recThumbImg {
+    position: relative;
+}
+/* 
+#resLabel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    
+} */
+
+.text {
+    width:100%;    
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+

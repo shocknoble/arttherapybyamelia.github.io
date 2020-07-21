@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Art</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="index.css">
 </head>
+
+
+<script>
+    $(function () {
+    $('#portfolio').bind({
+        'touchstart': function () {
+            if ($(this).hasClass('hover')) {
+                $(this).removeClass('hover')
+            }else {
+                $(this).addClass('hover')
+            }
+        },
+        'touchcancel': function() {
+            $(this).removeClass('hover')
+        },
+        'touchend': function() {
+            $(this).removeClass('hover')
+        }
+    });
+    $('#portfolio').on('touchend', function() {
+        $(this).removeClass('hover');
+    })
+});
+
+</script>
 
 <body>
     <div class='header'>
@@ -23,10 +50,12 @@
         <a href="/contact.html">contact</a>
         
     </div>
+    <br><br>
+    <hr style="border-color: magenta;">
     <table class="myArt">
         <tr>
             <td>
-                <img src="/my-art/IMG-1281.jpg" alt="">
+                <img src="/my-art/IMG-3068.jpg" alt="">
             </td>
             <td>
                 <img src="/my-art/IMG-3065.JPG" alt="">
@@ -37,7 +66,6 @@
             <td>
                 <img src="/my-art/IMG-3064.jpg" alt="">
             </td>
-            
         </tr>
         <tr>
             <td>
@@ -47,7 +75,7 @@
                 <img src="/my-art/IMG-3067.jpg" alt="">
             </td>
             <td>
-                <img src="/my-art/IMG-3068.jpg" alt="">
+                <img src="/my-art/IMG-1281.jpg" alt="">
             </td>
             <td>
                 <img src="/my-art/IMG-3069.jpg" alt="">
@@ -55,7 +83,7 @@
         </tr>
         <tr>
             <td>
-                <img src="/my-art/IMG-3552.jpg" alt="">
+                <img src="/my-art/IMG-5690.jpg" alt="">
             </td>
             <td>
                 <img src="/my-art/IMG-4458.jpg" alt="">
@@ -69,10 +97,10 @@
         </tr>
         <tr>
             <td>
-                <img src="/my-art/IMG-5690.jpg" alt="">
+                <img src="/my-art/IMG-7077.jpg" alt="">
             </td>
             <td>
-                <img src="/my-art/IMG-5877.JPG" alt="">
+                <img src="/my-art/IMG-3552.jpg" alt="">
             </td>
             <td>
                 <img src="/my-art/IMG-5953.jpg" alt="">
@@ -83,16 +111,16 @@
         </tr>
         <tr>
             <td>
-                <img src="/my-art/IMG-7077.jpg" alt="">
+                <img src="/my-art/IMG-5877.JPG" alt="">
             </td>
             <td>
-                <img src="/my-art/56428434564--282057CB-B8E8-4267-B8DE-EDEDF5A8644C.JPG" alt="">
+                <img src="/my-art/IMG-0435.jpg" alt="">
             </td>
             <td>
                 <img src="/my-art/IMG-0434.jpg" alt="">
             </td>
             <td>
-                <img src="/my-art/IMG-0435.jpg" alt="">
+                <img src="/my-art/56428434564--282057CB-B8E8-4267-B8DE-EDEDF5A8644C.JPG" alt="">
             </td>
         </tr>
         <tr>

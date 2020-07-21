@@ -6,6 +6,35 @@
     <title>Art Therapy by Amelia</title>
     <link rel="stylesheet" href="index.css">
 </head>
+<style>
+    img {
+    border: solid black 2px;
+}
+</style>
+<script>
+    // window.onload = function() {
+    //     let resLabel = document.getElementById('resumeLabel');
+    //     let resThumb = document.getElementById('resumeThumb');
+    //     let recLabel = document.getElementById('recLabel');
+    //     let recThumb = document.getElementById('recThumb');
+    //     resThumb.addEventListener('mouseover', function() {
+    //         resLabel.style.opacity = '1'
+    //     })
+    //     resThumb.addEventListener('mouseleave', function() {
+    //         resLabel.style.opacity = '0'
+    //     })
+
+    //     recThumb.addEventListener('mouseover', function() {
+    //         recLabel.style.opacity = '1'
+    //     })
+    //     recThumb.addEventListener('mouseleave', function() {
+    //         recLabel.style.opacity = '0'
+    //     })
+
+
+
+    // }
+</script>
 
 <body style="background:linear-gradient(180deg, #ffc8f3 100%, white); height: 100%">
     <div class='header' style="height: 100%; background: linear-gradient(180deg, #ffc8f3 100%, white);">
@@ -23,10 +52,44 @@
         <a href="/contact.html">contact</a>
         
     </div>
-    <div>
-        <a href="Resume.pdf">my resume</a>
+    <div class="table">
+        <br><br>
+        <hr style="border-color: magenta;">
+        <ul class="horizontal-list">
+            <li>
+                <a href="Resume.pdf" id="resumeThumb">
+                    <img  id="resumeThumbImg" style="max-width: 20%; border:solid 2px black; " src="resumeThumb.png">
+                        <!-- <p id="resumeLabel">resume</p> -->
+                    </img>
+                </a>
+            </li>
+            <li>
+                <a href="recLetter.pdf" id="recThumb">
+                    <img  id="recThumbImg" style=" max-width: 20%; border:solid 2px black; " src="recThumb.png">
+                        <!-- <p id="recLabel">letters of <br>recommendation</p> -->
+                    </img>
+                 </a>
+            </li>
+        </ul>
     </div>
-    <img style="max-width:50%"src="/my-art/IMG-0446.jpg" alt="">
+    <div class="table">
+
+        <ul class="horizontal-list">
+            <li>
+                <img style="max-width: 20%" src="/art-experientials/IMG-0808.jpg" alt="">
+            </li>
+            <li>
+                <img style="max-width: 20%;"src="/art-experientials/IMG-0814.jpg" alt="">
+            </li>
+            <li>
+                <img style="max-width: 20%;"src="/art-experientials/IMG-0824.jpg" alt="">
+            </li>
+            <li>
+                <img style="max-width: 20%;"src="/art-experientials/IMG-0809.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <img style="max-width:60%; margin-left: auto; margin-right: auto; width: 50%; border: solid black 2px"src="/my-art/IMG-0446.jpg" alt="">
     
 </body>
 </html>
