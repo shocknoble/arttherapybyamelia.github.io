@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Therapy by Amelia</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+<style>
+    img {
+    border: solid black 2px;
+}
+</style>
+<script>
+    $(function () {
+    $('#portfolio').bind({
+        'touchstart': function () {
+            if ($(this).hasClass('hover')) {
+                $(this).removeClass('hover')
+            }else {
+                $(this).addClass('hover')
+            }
+        },
+        'touchcancel': function() {
+            $(this).removeClass('hover')
+        },
+        'touchend': function() {
+            $(this).removeClass('hover')
+        }
+    });
+    $('#portfolio').on('touchend', function() {
+        $(this).removeClass('hover');
+    })
+});
+
+</script>
+
+<body style="background:linear-gradient(180deg, #ffc8f3 100%, white); height: 100%">
+    <div class='header' style="height: 100%; background: linear-gradient(180deg, #ffc8f3 100%, white);">
+        <img id="headshot" src="/art-experientials/IMG-1617.jpg"/>
+        <a href="/index.html">home</a> 
+        <span class="dropdown" id="portfolio">portfolio 
+            <div class="dropdown-content">
+                        <a href="/myart.html" style="color: purple">My Art</a> <br>
+                        <a href="/artexp.html" style="color: purple" >Art Experientials</a><br>
+                        <a href="/assignments.html" style="color: purple" >Assignments</a>
+
+            </div>
+        </span>
+        <a href="/about.html">about</a> 
+        <a href="/contact.html">contact</a>
+        
+    </div>
+    <div class="table">
+        <br><br>
+        <hr style="border-color: magenta;">
+        <ul class="horizontal-list">
+            <li>
+                <a href="Resume.pdf" id="resumeThumb">
+                    <img  id="resumeThumbImg" style="max-width: 20%; border:solid 2px black; " src="resumeThumb.png">
+                        <!-- <p id="resumeLabel">resume</p> -->
+                    </img>
+                </a>
+            </li>
+            <li>
+                <a href="recLetter.pdf" id="recThumb">
+                    <img  id="recThumbImg" style=" max-width: 20%; border:solid 2px black; " src="recThumb.png">
+                        <!-- <p id="recLabel">letters of <br>recommendation</p> -->
+                    </img>
+                 </a>
+            </li>
+        </ul>
+    </div>
+    <div class="table">
+
+        <ul class="horizontal-list">
+            <li>
+                <img style="max-width: 20%" src="/art-experientials/IMG-0808.jpg" alt="">
+            </li>
+            <li>
+                <img style="max-width: 20%;"src="/art-experientials/IMG-0814.jpg" alt="">
+            </li>
+            <li>
+                <img style="max-width: 20%;"src="/art-experientials/IMG-0824.jpg" alt="">
+            </li>
+            <li>
+                <img style="max-width: 20%;"src="/art-experientials/IMG-0809.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <img style="max-width:60%; margin-left: auto; margin-right: auto; width: 50%; border: solid black 2px"src="/my-art/IMG-0446.jpg" alt="">
+    
+</body>
+</html>
