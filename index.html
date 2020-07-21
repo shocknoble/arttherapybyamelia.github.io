@@ -12,28 +12,27 @@
 }
 </style>
 <script>
-    // window.onload = function() {
-    //     let resLabel = document.getElementById('resumeLabel');
-    //     let resThumb = document.getElementById('resumeThumb');
-    //     let recLabel = document.getElementById('recLabel');
-    //     let recThumb = document.getElementById('recThumb');
-    //     resThumb.addEventListener('mouseover', function() {
-    //         resLabel.style.opacity = '1'
-    //     })
-    //     resThumb.addEventListener('mouseleave', function() {
-    //         resLabel.style.opacity = '0'
-    //     })
+    $(function () {
+    $('#portfolio').bind({
+        'touchstart': function () {
+            if ($(this).hasClass('hover')) {
+                $(this).removeClass('hover')
+            }else {
+                $(this).addClass('hover')
+            }
+        },
+        'touchcancel': function() {
+            $(this).removeClass('hover')
+        },
+        'touchend': function() {
+            $(this).removeClass('hover')
+        }
+    });
+    $('#portfolio').on('touchend', function() {
+        $(this).removeClass('hover');
+    })
+});
 
-    //     recThumb.addEventListener('mouseover', function() {
-    //         recLabel.style.opacity = '1'
-    //     })
-    //     recThumb.addEventListener('mouseleave', function() {
-    //         recLabel.style.opacity = '0'
-    //     })
-
-
-
-    // }
 </script>
 
 <body style="background:linear-gradient(180deg, #ffc8f3 100%, white); height: 100%">

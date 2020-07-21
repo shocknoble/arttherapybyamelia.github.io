@@ -6,7 +6,29 @@
     <title>About</title>
     <link rel="stylesheet" href="index.css">
 </head>
+<script>
+    $(function () {
+    $('#portfolio').bind({
+        'touchstart': function () {
+            if ($(this).hasClass('hover')) {
+                $(this).removeClass('hover')
+            }else {
+                $(this).addClass('hover')
+            }
+        },
+        'touchcancel': function() {
+            $(this).removeClass('hover')
+        },
+        'touchend': function() {
+            $(this).removeClass('hover')
+        }
+    });
+    $('#portfolio').on('touchend', function() {
+        $(this).removeClass('hover');
+    })
+});
 
+</script>
 <body style="background:linear-gradient(180deg, #ffc8f3 100%, white); height: 100%">
     <div class='header' style="height: 100%; background: linear-gradient(180deg, #ffc8f3 100%, white);">
         <img id="headshot" src="/art-experientials/IMG-1617.jpg"/>
