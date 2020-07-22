@@ -76,3 +76,7 @@ header {
   border-radius: 3.5vw;
   vertical-align: middle;
 }
+
+html, body {
+  background-repeat: no-repeat;
+}
