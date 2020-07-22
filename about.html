@@ -1,53 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-</head>
-<script>
-    $(function () {
-    $('#portfolio').bind({
-        'touchstart': function () {
-            if ($(this).hasClass('hover')) {
-                $(this).removeClass('hover')
-            }else {
-                $(this).addClass('hover')
-            }
-        },
-        'touchcancel': function() {
-            $(this).removeClass('hover')
-        },
-        'touchend': function() {
-            $(this).removeClass('hover')
-        }
-    });
-    $('#portfolio').on('touchend', function() {
-        $(this).removeClass('hover');
-    })
-});
-
-</script>
-<body style="background:linear-gradient(180deg, #ffc8f3 100%, white); height: 100%">
-    <div class='header' style="height: 100%; background: linear-gradient(180deg, #ffc8f3 100%, white);">
-        <img id="headshot" src="/art-experientials/IMG-1617.jpg"/>
-        <a href="/index.html">home</a> 
-        <span class="dropdown" id="portfolio">portfolio 
-            <div class="dropdown-content">
-                        <a href="/myart.html" style="color: purple">My Art</a> <br>
-                        <a href="/artexp.html" style="color: purple" >Art Experientials</a><br>
-                        <a href="/assignments.html" style="color: purple" >Assignments</a>
-
-            </div>
-        </span>
-        <a href="/about.html">about</a> 
-        <a href="/contact.html">contact</a>
-        
-    </div>
-    <br><br>
-    <hr style="border-color: magenta;">
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/album/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-</body>
-</html>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Art Therapy by Amelia</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootStrapexample_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./bootStrapexample_files/album.css" rel="stylesheet">
+  </head>
+
+
+
+  <body>
+
+    <header>
+      <div class="collapse bg-light" id="navbarHeader">
+        <div class="container" >
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-gray">About</h4>
+              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-gray">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="text-dark">Follow on Twitter</a></li>
+                <li><a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="text-dark">Like on Facebook</a></li>
+                <li><a target="_blank" href="mailto:ameliaphoto94@gmail.com">email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-light box-shadow" id="header-bar">
+        <div class="container d-flex justify-content-between">
+            <a href="/index.html">
+                <img id="headshot" src="art-experientials/IMG-1617.jpg" alt="">
+              </a>
+			<div class="navbar-brand d-flex align-items-center">
+					<a href="/myart.html"><strong>my art</strong></a>
+					&nbsp;|&nbsp;
+                    <a href="/artexp.html"> <strong>art experientials</strong></a>
+                    &nbsp;|&nbsp;
+                    <a href="/assignments.html"><strong>assignments</strong></a>
+                    &nbsp;|&nbsp;
+                    <a href="/about.html"><strong>about</strong></a>
+			</div>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center" style="background-color: #ffc8f3;text-justify: newspaper;">
+        <div class="container">
+          <h1 class="jumbotron-heading" style="text-justify: newspaper;">about</h1>
+          <br><br><br>
+          <div class="card-text text-dark" style="text-justify: newspaper;">Hello there! My name is Amelia Brown and I am an Art Therapist. “What exactly is art therapy?” you may be wondering. According to the American Art Therapy Association, “Art therapy is an integrative mental health and human services profession that enriches the lives of individuals, families, and communities through active art-making, creative process, applied psychological theory, and human experience within a psychotherapeutic relationship.” I think that this can be summed up as: a therapeutic tool used to help people grow and heal through art. Art therapy can be facilitated using a variety of different mediums. These could range anywhere from pencil or watercolor, to sculpting with clay. I recently graduated from Wayne State University in August 2020 with a master’s degree in art therapy. I had been interning at StoneCrest Center in Detroit since January 2020, which is an inpatient psychiatric hospital. I love the work that I do there and I especially enjoy group art therapy.
+            My passion for art started in childhood, as my mother and grandmother both painted what I considered masterpieces. I’ve also always been drawn to the study of people and psychology. When I found out about art therapy in my undergrad, I couldn’t believe that both of the things I loved could be in one profession. I truly found my calling!</div>
+      
+      </div>
+          <p>
+ 
+
+          </p>
+        </div>
+      </section>
+
+ 
+
+    </main>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bootStrapexample_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./bootStrapexample_files/popper.min.js.download"></script>
+    <script src="./bootStrapexample_files/bootstrap.min.js.download"></script>
+    <script src="./bootStrapexample_files/holder.min.js.download"></script>
+  
